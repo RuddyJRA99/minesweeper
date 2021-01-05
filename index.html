@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Buscaminas</title>
+</head>
+<body>
+    <script  src="./mian.js"></script>
+
+    <section class="container">
+        <div class="statusBar"> 
+            <p class="timer">00:00</p>
+            <span class="emoji" id="emoji">🙂</span>
+            <button class="btnFlag" id="flag" onclick="Marker()">🚩</button>
+        </div>
+        <div class="buttons" id="buttonPanel">
+            <!--botones cargados automaticamente-->
+        </div>
+        <div class="contentWindow" id="contentWindow">
+            <div class="background">
+            
+            </div>
+            <div class="window" id="window">
+                <h2>Game Over</h2>
+                <button onclick="reloadGame()">Play again</button>
+            </div>
+        </div>
+        
+        
+        
+    </section>
+    
+</body>
+</html>

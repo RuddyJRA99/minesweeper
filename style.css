@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+
+*{
+    background: rgb(43, 43, 43);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.statusBar{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid rgb(87, 151, 248);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.timer{
+    color: beige;
+    border: solid 2px white;
+    font-size: 20px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.emoji{
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 8px;
+    background: #800080; 
+    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);
+    background: linear-gradient(to right, #e08292, #800080);
+    align-self: center;
+}
+
+
+.btnFlag{
+    background: rgb(190, 190, 190);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0px 0px 10px ;
+}
+
+.btn{
+    background: rgb(190, 190, 190);
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 2px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+.btn:disabled{
+    background: rgb(146, 146, 146);
+}
+.btnFlag{
+    background: rgb(190, 190, 190);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0px 0px 10px ;
+}
+
+.buttons{
+    margin-top: 100px;
+    
+    
+}
+
+.buttons:hover .btn:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.buttons:hover .btn{
+    opacity:  0.8 ;
+}
+
+.contentWindow{
+    display: none;
+    justify-content: center;
+}
+.background{
+    display: flex;
+    background-color: rgb(59, 59, 59);
+    opacity: 0.5;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.window{
+    position: fixed;
+    top: 25%;
+    background: rgba(234, 86, 86, 0.9);
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px ;
+    z-index: 6;
+}
+.window h2{
+    background: transparent;
+    text-align: center;
+    color: rgb(75, 2, 2);
+}
+.window button{
+    background: rgb(70, 69, 69);
+    text-align: center;
+    color:white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
